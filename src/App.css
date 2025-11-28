@@ -38,3 +38,49 @@
   background-color: #4cf568;
   cursor: pointer;
 }
+/*animation: imeAnimacije trajanje timingFunction delay iterationCount direction fillMode playState;*/
+/*Loading*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  border: 8px solid #e9ecf3;
+  border-top: 8px solid #4cf568;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite normal none;
+  margin: 200px auto;
+}
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.qr-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4cf568;
+  width: 25%;
+  padding: 20px;
+  border-radius: 1rem;
+  gap: 10px;
+}
+.download-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9px;
+  background-color: #f54c4c;
+  cursor: pointer;
+}
